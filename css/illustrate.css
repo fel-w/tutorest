@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+    outline:none;
+    text-decoration:none;
+}
+body{
+    color: black;
+    background-color: #E1F2DA;
+}
+.clr{
+    clear: both;
+}
+.top-bar{
+    background-color: #F7F7F7;
+    height: 63px;
+    color: #096809;
+}
+
+.brand{
+    float: left;
+}
+
+.glyphicon{
+    font-size: 40px;
+    color: #096809;
+    padding: 10px;
+}
+a .glyphicon:hover{
+    border-radius:12px;
+    background-color: #CDCDCD;
+}
+.spacing{
+    margin-left: 15px;
+}
+.implement{
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+.implement .implement-name{
+    float: left;
+    padding: 16px;
+    font-size: 18px;
+    border-bottom: 4px solid #096809;
+    background-color: #ececec;
+}
+.control-panel{
+    margin-top: 10px;
+    margin-left: 8%;
+}
+.control-panel h4,.code-section h4, .code-section-2 h4{
+    text-align: center;
+    margin: 0;
+    padding: 12px 0;
+    color: #096809;
+}
+.command-center, .display, .display-2{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    height: auto;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: white;
+}
+.display,.display-2{
+    margin-left: 40px;
+    height: 200px;
+    font-size: 18px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.display-2{
+    height: auto;
+}
+#display{
+    font-size: 14px;
+    text-align: left;
+    height: 190px;
+    overflow: auto
+}
+.command-center input[type="text"]{
+    width:23%;
+    border-radius: 2px;
+    border: 1px solid #ADADAD;
+    padding: 5px 7px;
+    margin-left: 6px;
+    color: black;
+}
+button{ 
+    background-color: #898989;
+    border: #C9C9C9;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 30%;
+}
+button:hover{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}                
+hr{
+    border-color: #096810;
+    margin-top:-4px;
+}
+.instructions-2{
+    left: 2px;
+    top: -126px;
+    width: 41%;
+    height: 127px;
+}
+.instructions{
+    left: 39px;
+    top: 15px;
+    width: 42%;
+    height: 128px;
+}
+.instructions h4, .instructions-2 h4{
+    margin-top: -14px;
+}
+.instructions ul, .instructions-2 ul{
+    line-height: 1.3;
+    padding-left: 10px;
+    color: black;
+    margin-top: -5px;
+}
+
+.alert-success{
+    border-color: #89C489;
+    background-color: #bbccb4;
+}
+.code-section,.code-section-2{
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.4);
+    padding: 0 10px;
+    padding-bottom: 10px;
+    margin-top:15px;
+    background-color: white;
+}
+.code-section-2{
+    margin-top: -120px;
+}
+.code-section pre,.code-section-2 pre{
+    height: 400px;
+    overflow: auto;
+    color:#A00404;
+}
+.comment{
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    color: #898989  ;
+}
+footer{
+    margin-top: 10px;
+    margin-bottom: 0;
+    background-color:#B0B0B0;
+    color: black;
+    line-height:4.67;
+}
+.footer-section {
+    height: auto;
+    margin: auto;
+    width: 300px;
+}
+.footer-logo{
+    
+}
+.copyright{
+    float: left;
+    margin-top: 5px;
+}
+
+@media screen and (max-width:991px){
+    .implement{
+        clear: both;
+        width: 40%;
+        margin: auto;
+    }
+        .implement .implement-name{
+            border-bottom:none;
+            background:none;
+    }
+}
+@media screen and (max-width:767px){
+    button{
+        width: 20%;
+    }
+    .control-panel{
+        margin:auto;
+    }
+    .display, .display-2{
+        margin-left:0;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        height:200px;
+    }
+        #display{
+        font-size: 14px;
+        text-align: left;
+        height: 125px;
+        overflow: auto
+    }
+    .command-center input[type="text"]{
+        text-align: center;
+    }
+    .instructions,.instructions-2{
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .code-section,.code-section-2{
+        margin-top: auto;
+    }
+}
+@media screen and (max-width:551px){
+    .implement{
+        clear: both;
+        width: 100%;
+        margin: auto;
+    } 
+}
+@media screen and (max-width:507px){
+    button{
+        width: 98px;
+    }    
+}
+@media screen and (max-width:300px){
+    .footer-section{
+        width: 100%;
+    }
+}
